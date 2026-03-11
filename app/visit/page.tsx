@@ -2,7 +2,7 @@ import PageHeader from "@/components/PageHeader";
 import Section from "@/components/Section";
 import Button from "@/components/Button";
 
-export const metadata = { title: "Plan Your Visit | Dry Valley Baptist" };
+export const metadata = { title: "Plan Your Visit" };
 
 export default function VisitPage() {
   return (

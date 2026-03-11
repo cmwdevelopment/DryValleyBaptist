@@ -1,11 +1,12 @@
 import PageHeader from "@/components/PageHeader";
 import Section from "@/components/Section";
 import StaffCard from "@/components/StaffCard";
-import { staff } from "@/data/staff";
+import { fetchStaff } from "@/lib/api/staff";
 
-export const metadata = { title: "About | Dry Valley Baptist" };
+export const metadata = { title: "About" };
 
-export default function AboutPage() {
+export default async function AboutPage() {
+  const staffMembers = await fetchStaff();
   return (
     <>
       <PageHeader
@@ -46,7 +47,7 @@ export default function AboutPage() {
       <Section className="bg-dvb-sand">
         <h2 className="text-2xl font-bold text-dvb-navy mb-6">Leadership &amp; Staff</h2>
         <div className="grid md:grid-cols-3 gap-6">
-          {staff.map(s => <StaffCard key={s.id} staff={s} />)}
+          {staffMembers.map(s => <StaffCard key={s.id} staff={s} />)}
         </div>
       </Section>
     </>

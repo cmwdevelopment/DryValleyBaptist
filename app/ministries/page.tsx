@@ -3,7 +3,7 @@ import Section from "@/components/Section";
 import MinistryCard from "@/components/MinistryCard";
 import { fetchMinistries } from "@/lib/api/ministries";
 
-export const metadata = { title: "Ministries | Dry Valley Baptist" };
+export const metadata = { title: "Ministries" };
 
 export default async function MinistriesPage() {
   const ministries = await fetchMinistries();
