@@ -3,7 +3,7 @@ import Section from "@/components/Section";
 import EventCard from "@/components/EventCard";
 import { fetchEvents } from "@/lib/api/events";
 
-export const metadata = { title: "Events | Dry Valley Baptist" };
+export const metadata = { title: "Events" };
 
 export default async function EventsPage() {
   const events = await fetchEvents();

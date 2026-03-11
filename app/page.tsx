@@ -1,10 +1,7 @@
-import Link from "next/link";
 import Button from "@/components/Button";
 import Section from "@/components/Section";
 import EventCard from "@/components/EventCard";
 import { fetchEvents } from "@/lib/api/events";
-
-export const metadata = { title: "Dry Valley Baptist Church" };
 
 export default async function HomePage() {
   const upcomingEvents = (await fetchEvents()).slice(0, 2);

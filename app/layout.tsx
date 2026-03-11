@@ -4,7 +4,10 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Dry Valley Baptist Church",
+  title: {
+    default: "Dry Valley Baptist Church",
+    template: "%s | Dry Valley Baptist Church",
+  },
   description:
     "A Christ-centered church family on mission in Dry Valley. Join us for worship, discipleship, and community.",
 };

@@ -3,7 +3,7 @@ import Section from "@/components/Section";
 import SermonCard from "@/components/SermonCard";
 import { fetchSermons } from "@/lib/api/sermons";
 
-export const metadata = { title: "Sermons | Dry Valley Baptist" };
+export const metadata = { title: "Sermons" };
 
 export default async function SermonsPage() {
   const sermons = await fetchSermons();
